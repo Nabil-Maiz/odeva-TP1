@@ -1,0 +1,4 @@
+## ignoring all binary and zip files
+*.class
+bin
+*.zip
