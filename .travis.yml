@@ -1,5 +1,6 @@
 language: java
 
 script:
-    - javac Action/src/action/*.java
-    - javac Action/src/pool/*.java
+    - mkdir classes/
+    - javac -d classes/ Action/src/action/*.java
+    - javac -cp classes/ -d classes/ Action/src/pool/*.java
